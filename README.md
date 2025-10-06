@@ -3,8 +3,10 @@ docker desktopをインストール
 
 # redmineをインストール 起動
 mkdir redmine
-docker run -d -p 3000:3000 redmine:5.1
 
+#
+docker run -d -p 3000:3000 --name redmine -v redmine_data:/usr/src/redmine/files -v redmine_db:/var/lib/mysql redmine:5.1
+  
 # アクセス
 http://localhost:3000
 
