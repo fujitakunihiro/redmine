@@ -1,7 +1,7 @@
 # 前提
 docker desktopをインストール
 
-# redmineをインストール
+# redmineをインストール 起動
 mkdir redmine
 docker run -d -p 3000:3000 redmine:5.1
 
